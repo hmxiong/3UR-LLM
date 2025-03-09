@@ -1,0 +1,19 @@
+# ninja log v5
+17	18154	1701670599029235000	/13390024681/3D/3D-LLM/3DLLM_BLIP2-base/lavis/models/pointnet2/build/temp.linux-x86_64-cpython-39/_ext_src/src/bindings.o	f0f6ae3da5e632f1
+16	18305	1701670599220508000	/13390024681/3D/3D-LLM/3DLLM_BLIP2-base/lavis/models/pointnet2/build/temp.linux-x86_64-cpython-39/_ext_src/src/ball_query.o	bd11f77a2992546d
+19	18812	1701670599336467000	/13390024681/3D/3D-LLM/3DLLM_BLIP2-base/lavis/models/pointnet2/build/temp.linux-x86_64-cpython-39/_ext_src/src/sampling.o	9074b602f1d04af5
+18	18879	1701670599801630000	/13390024681/3D/3D-LLM/3DLLM_BLIP2-base/lavis/models/pointnet2/build/temp.linux-x86_64-cpython-39/_ext_src/src/interpolate.o	fcf8c760e0e92938
+17	19034	1701670599951377000	/13390024681/3D/3D-LLM/3DLLM_BLIP2-base/lavis/models/pointnet2/build/temp.linux-x86_64-cpython-39/_ext_src/src/group_points.o	2a4dc9d0899ad58c
+17	52886	1701670633745740000	/13390024681/3D/3D-LLM/3DLLM_BLIP2-base/lavis/models/pointnet2/build/temp.linux-x86_64-cpython-39/_ext_src/src/ball_query_gpu.o	eb23bb56f80bb2b1
+18	52979	1701670633823308000	/13390024681/3D/3D-LLM/3DLLM_BLIP2-base/lavis/models/pointnet2/build/temp.linux-x86_64-cpython-39/_ext_src/src/group_points_gpu.o	cf48d69792cf0388
+19	52980	1701670633833503000	/13390024681/3D/3D-LLM/3DLLM_BLIP2-base/lavis/models/pointnet2/build/temp.linux-x86_64-cpython-39/_ext_src/src/interpolate_gpu.o	3b3837d12ffe65bc
+19	56193	1701670637100131000	/13390024681/3D/3D-LLM/3DLLM_BLIP2-base/lavis/models/pointnet2/build/temp.linux-x86_64-cpython-39/_ext_src/src/sampling_gpu.o	4924172beb98619a
+18	22657	1708496183314709000	/13390024681/3D/3D-LLM/3DLLM_BLIP2_LoRA/lavis/models/pointnet2/build/temp.linux-x86_64-cpython-39/_ext_src/src/group_points.o	3cfeddaac8547ca
+18	23386	1708496184043315000	/13390024681/3D/3D-LLM/3DLLM_BLIP2_LoRA/lavis/models/pointnet2/build/temp.linux-x86_64-cpython-39/_ext_src/src/interpolate.o	6aa9680366932cad
+19	24189	1708496184846788000	/13390024681/3D/3D-LLM/3DLLM_BLIP2_LoRA/lavis/models/pointnet2/build/temp.linux-x86_64-cpython-39/_ext_src/src/sampling.o	4cdb28c728756ed0
+17	24249	1708496184906939000	/13390024681/3D/3D-LLM/3DLLM_BLIP2_LoRA/lavis/models/pointnet2/build/temp.linux-x86_64-cpython-39/_ext_src/src/bindings.o	30bbe34c960c9ccf
+16	26732	1708496187387635000	/13390024681/3D/3D-LLM/3DLLM_BLIP2_LoRA/lavis/models/pointnet2/build/temp.linux-x86_64-cpython-39/_ext_src/src/ball_query.o	2cd37496b2d578b3
+17	61001	1708496221624465000	/13390024681/3D/3D-LLM/3DLLM_BLIP2_LoRA/lavis/models/pointnet2/build/temp.linux-x86_64-cpython-39/_ext_src/src/ball_query_gpu.o	e8f854970b3be715
+18	63225	1708496223856847000	/13390024681/3D/3D-LLM/3DLLM_BLIP2_LoRA/lavis/models/pointnet2/build/temp.linux-x86_64-cpython-39/_ext_src/src/group_points_gpu.o	49955a61adf5d381
+19	63621	1708496224252993000	/13390024681/3D/3D-LLM/3DLLM_BLIP2_LoRA/lavis/models/pointnet2/build/temp.linux-x86_64-cpython-39/_ext_src/src/interpolate_gpu.o	6c9e493c8569ee37
+19	65503	1708496226137727000	/13390024681/3D/3D-LLM/3DLLM_BLIP2_LoRA/lavis/models/pointnet2/build/temp.linux-x86_64-cpython-39/_ext_src/src/sampling_gpu.o	f516237496f59cda

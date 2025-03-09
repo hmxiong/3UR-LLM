@@ -1,0 +1,79 @@
+
+
+model:
+  arch: blip2_3detr_concate
+  model_type: pretrain_flant5xl
+  use_grad_checkpoint: False
+  mask_embedding: False
+  num_query_token: 32
+  use_3d: False
+  use_pretrained: True
+  threed_encoder: "/13390024681/3D/3D-LLM/model_zoo/threedetr_scannet_750.pth"
+  pretrained: /13390024681/3D/3D-LLM/3DLLM_BLIP2-base/lavis/output/BLIP2/pretrain_3d_3detr_concate/use_fusion_data/checkpoint_19.pth
+  status: finetune
+  use_cot: True
+  train_embeddings: True
+  freeze_q_former: False
+# /13390024681/3D/3D-LLM/3DLLM_BLIP2-base/lavis/output/BLIP2/pretrain_3d_vdetr/pretrain_blip2_instruction_vdetr_flant5xl_v2_20e.pth
+
+datasets:
+  scanqa: # name of the dataset builder
+    vis_processor:
+        train:
+          name: "blip2_image_train"
+          image_size: 364
+        eval:
+          name: "blip_image_eval"
+          image_size: 364
+    text_processor:
+        train:
+          name: "blip_question"
+          prompt: ""
+        eval:
+          name: "blip_question"
+    build_info:
+        annotations:
+          train:
+            storage: /13390024681/3D/3D-LLM/data/ScanQA/ScanQA_v1.0_train.json
+          test:
+            storage: /13390024681/3D/3D-LLM/data/ScanQA/ScanQA_v1.0_val.json
+          val:
+            storage: /13390024681/3D/3D-LLM/data/ScanQA/ScanQA_v1.0_val.json
+
+run:
+  task: 3d_vqa
+  # optimizer
+  lr_sched: "linear_warmup_cosine_lr"
+  init_lr: 1e-4
+  min_lr: 1e-5
+  warmup_lr: 1e-8
+  warmup_steps: 1000
+  weight_decay: 0.05
+  max_epoch: 100 # training 100 epochs
+  eval_epochs: 20
+  save_epochs: 20
+  batch_size_train: 8
+  batch_size_eval: 4
+  num_workers: 4
+  accum_grad_iters: 2
+
+  max_len: 512
+  min_len: 1
+  num_beams: 5
+ 
+  inference_method: "generate"
+
+  seed: 42
+  output_dir: "output/BLIP2/3DQA_3DETR_CONCATE_32_FUSION"
+
+  amp: False
+  # resume_ckpt_path: /13390024681/3D/3D-LLM/3DLLM_BLIP2-base/lavis/output/BLIP2/3DQA_3DETR_CONCATE/20240224052/checkpoint_19.pth
+  evaluate: False
+  train_splits: ["train"]
+  valid_splits: ["val"]
+  test_splits: ["test"]
+
+  device: "cuda"
+  world_size: 16
+  dist_url: "env://"
+  distributed: True
